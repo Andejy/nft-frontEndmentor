@@ -1,0 +1,179 @@
+:root{
+    --veri : hsl(217, 54%, 11%);
+    --Very : hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft: hsl(215, 51%, 70%);
+--Cyan:hsl(178, 100%, 50%);
+
+
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+background: var(--veri);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+}
+
+.container{
+width: 47vh;
+height: 600px;
+background: var(--Very);
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-bottom: 40px;
+}
+
+.imgContainer{
+width: 20vh;
+height: 35vh;
+margin-top: 20px;  
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.equlibriunNFT{
+    width: 100%;
+    max-width: 300px;
+    min-width: 280px;
+    border-radius: 15px;
+    }
+
+.eye{
+    padding: 30px;
+    position: absolute;
+    min-width: 280px;
+    min-height: 280px;
+    background-color: hsla(178, 100%, 50%, 0.336);
+    opacity: 0;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.eye img {   
+position: absolute;
+display: block;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.eye:hover{
+    opacity: 1;
+    
+}
+   
+
+
+.textContainer h2 {
+    color: var(--White);
+    margin:10px 0 30px  25px  ; 
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+
+.textContainer h2:hover{
+    color: var(--Cyan);
+}
+
+
+.textContainer p{
+color: var(--Soft);
+font-size: 18px;
+margin:0 0 20px 25px;
+}
+
+.infoContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px 20px; 
+   padding-bottom: 10px;
+}
+.time{
+   color: var(--Cyan);
+   margin: 0 100px 0 10px;
+}
+.timeLeft{
+    color: var(--Soft);
+    margin: 0 10px 0 10px;
+}
+
+.perfil{
+    flex-direction: row;
+    display: flex;
+margin-top: 20px;
+border-top: 1px solid var(--line);
+padding-top: 30px;
+}
+
+
+.perfil img{
+    border: 2px solid var(--line);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: translate(20px, -10px); 
+    
+}
+
+.perfilInfo span {
+transition: all 0.5s;
+}
+
+
+.perfilInfo span:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+} 
+
+
+@media screen and (max-width: 685px){
+
+
+/* diseno de la tarjeta de la nft en celular */
+
+.container{
+width: 300px;
+height: fit-content;
+}
+
+.equlibriunNFT{
+    width: 100%;
+    max-width: 250px;
+    min-width: 250px;
+    border-radius: 15px;
+    }
+
+
+.eye{
+    min-width: 250px;
+    min-height: 250px;
+}
+.infoContainer{
+    padding: 0;
+}
+.time{
+    margin: 0 25px 0 10px;
+}
+.etereun{
+    margin-left: 30px;
+}
+
+}
